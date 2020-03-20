@@ -16,6 +16,7 @@ import {
 
 import Header from '~/components/Header';
 import Tabs from '~/components/Tabs';
+import Menu from '~/components/Menu';
 
 export default function Main() {
   return (
@@ -23,6 +24,8 @@ export default function Main() {
       <Header />
 
       <Content>
+        <Menu />
+
         <Card>
           <CardHeader>
             <Icon name="attach-money" size={28} color="#666" />
