@@ -6,12 +6,9 @@
     A Nubank ui clone using React Native.
 </h3>
 
-<strong align="center">
-    Using Animated API from React Native to create Nubank card animation, using React Hooks API.
-</strong>
-
 <p align="center">
-    application developed to train animations with react native. 😄
+  Using Animated API from React Native to create Nubank card animation, using React Hooks API.
+  application developed to train animations with react native. 😄
 </p>
 
 # ❗️ Requisites
@@ -61,5 +58,5 @@ $ react-native run-ios
 - See the gif of the application
 
 <h1 align="center">
-<img src ="./assets/MArketbook-Mobile.gif" height="600px">
+<img src ="./assets/Nubank.gif" height="600px">
 </h1>
