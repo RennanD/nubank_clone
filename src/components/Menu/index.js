@@ -3,6 +3,8 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import QRCode from 'react-native-qrcode-svg';
 
+import PropTypes from 'prop-types';
+
 import {
   Container,
   Code,
@@ -13,9 +15,16 @@ import {
   ButtonText,
 } from './styles';
 
-export default function Menu() {
+export default function Menu({ translateY }) {
   return (
-    <Container>
+    <Container
+      style={{
+        opacity: translateY.interpolate({
+          inputRange: [0, 150],
+          outputRange: [0, 1],
+        }),
+      }}
+    >
       <Code>
         <QRCode
           value="https://rocketseate.com.br"
@@ -53,3 +62,7 @@ export default function Menu() {
     </Container>
   );
 }
+
+Menu.propTypes = {
+  translateY: PropTypes.shape().isRequired,
+};
